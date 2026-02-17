@@ -1,0 +1,143 @@
+:root {
+    --details-color: #C7C7C7;
+    --text-color: #FFFFFF;
+    --nav-background-color: #012D63;
+    --ua-button-color: #DCDCDC;
+    --buttton-color: #8E32C6;
+    --form-text-color: #959595;
+    --footer-background-color: #021635;
+    --footer-line-color: #9B9B9B;
+    --day-color: #D8D8D8;
+    --confirmation-color: #8D8D8D;
+}
+
+body {
+    background-color: var(--nav-background-color);
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 100px;
+    height: auto;
+}
+
+header a{
+    color: var(--details-color);
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+header a:hover {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/hero_section_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 170px 50px 100px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 144px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 72px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero h3 {
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+
+.hero p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+.hero a {
+    background-color: var(--buttton-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 20px 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hero-logo{
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    left: 25px;
+}
+
+.highlights {
+    display: flex;
+    text-align: center;
+    font-size: 36px;
+    height: 606px;
+    background-image: url(../img/highlight_section_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.card {
+    width: 240px;
+    height: 346px;
+    margin: 0px 30px;
+}
+
+.card p {
+    padding: 0;
+    margin: 0;
+}
+
+.card:nth-child(2) {
+    margin: 0 30px;
+}
+
+.highlights-container {
+    display: flex;
+    border: #8E32C6 5px solid;
+    padding: 60px;
+    gap: 80px
+}
+
+.card:not(:last-child) {
+  border-right: 1px solid var(--text-color);
+}
+
+.reviews-section {
+    display: flex;
+    justify-content: center;
+}
