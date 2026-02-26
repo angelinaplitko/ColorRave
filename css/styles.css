@@ -17,6 +17,14 @@ body {
   color: var(--text-color);
 }
 
+.container {
+    padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -122,9 +130,9 @@ h1 {
   margin: 0;
 }
 
-.card:nth-child(2) {
+ .card:nth-child(2) {
   margin: 0 30px;
-}
+} 
 
 .highlights-container {
   display: flex;
@@ -133,14 +141,19 @@ h1 {
   gap: 80px;
 }
 
-.card:not(:last-child) {
-  border-right: 1px solid var(--text-color);
+.card::after {
+  content: "";
+  width: 1px;
+  height: 346px;
+  background: var(--text-color);
+  position: absolute;
+}
+
+.card:last-child::after {
+  display: none;
 }
 
 .reviews-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url(../img/reviews-section-background.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -148,24 +161,20 @@ h1 {
   height: 520px;
   border-top: 4px solid var(--text-color);
   border-bottom: 4px solid var(--text-color);
+  text-align: center;
 }
 
 .review-heading {
-  align-self: center;
-}
-
-.review {
-  width: 255px;
-  height: 292px;
-  text-align: center;
+  font-size: 48px;
 }
 
 .review-cards {
   display: flex;
-  gap: 40px;
-  margin: 25px;
   flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
 }
 
 .review-card {
@@ -174,6 +183,17 @@ h1 {
   border-radius: 18px;
   color: var(--text-color);
 }
+
+.reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 25px 53px 25px 53px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
 .blue {
   background: linear-gradient(135deg, #22d3ee, #a855f7);
   box-shadow: 0px 15px 0px -5px #7b54b2, 0px 28px 0px -10px #533978;
@@ -271,15 +291,11 @@ h1 {
   flex: 1;
 }
 
-input::after {
-  background: white;
-  color: #333;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s;
+.input::after {
+    content: "confirm";
+    color: var(--form-text-color);
+    width: 50px;
+    height: 30px;
 }
 
 .order-btn {
@@ -314,7 +330,9 @@ footer ul {
 
 .footer-info::after {
   content: "";
-  border-bottom: 3px solid var(--footer-line-color);
+  height: 2px;
+  width: 100%;
+  background: var(--text-color);
 }
 
 .footer-logo {
@@ -341,6 +359,6 @@ footer ul {
   padding: 20px;
 }
 
-.small {
+.small-text {
   font-size: 18px;
 }

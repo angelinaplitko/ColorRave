@@ -77,9 +77,11 @@
         </div>
       </section>
       <section class="reviews-section">
-        <h2 class="review-heading">Reviews</h2>
-        <div class="review-cards">
-          <div class="review-card blue">
+        <div class="container">
+          <h2 class="review-heading">Reviews</h2>
+         <div class="review-cards">
+          <ul class="reviews-list">
+          <li class="review-card blue">
             <p class="text">
               Sneakers are very comfortable and well painted, nothing has worn
               off in a year.
@@ -88,13 +90,12 @@
             <div class="author">
               <img src="./img/first_review.png" alt="" />
               <div>
-                <div class="name">John Taylor</div>
-                <div class="info">With us from 2018</div>
+                <p class="name">John Taylor</p>
+                <p class="info">With us from 2018</p>
               </div>
-            </div>
-          </div>
-
-          <div class="review-card purple">
+              </div>
+            </li>
+         <li class="review-card purple">
             <p class="text">
               I'm very happy with this color scheme. They match all my clothes.
             </p>
@@ -102,13 +103,12 @@
             <div class="author">
               <img src="./img/second_review.png" alt="" />
               <div>
-                <div class="name">Elizabeth Garcia</div>
-                <div class="info">With us from 2018</div>
+                <p class="name">Elizabeth Garcia</p>
+                <p class="info">With us from 2018</p>
               </div>
             </div>
-          </div>
-
-          <div class="review-card orange">
+          </li>
+          <li class="review-card orange">
             <p class="text">
               Just right if you need to go to a party. I use them actively, the
               paint is super.
@@ -117,28 +117,32 @@
             <div class="author">
               <img src="./img/third_review.png" alt="" />
               <div>
-                <div class="name">Tom Marques</div>
-                <div class="info">With us from 2019</div>
+                <p class="name">Tom Marques</p>
+                <p class="info">With us from 2019</p>
               </div>
-            </div>
+            </li>
+            </ul>
           </div>
         </div>
+      </div>
       </section>
       <section class="order-section">
+        <div class="container">
         <div class="order-container">
           <h2>Order</h2>
 
           <form class="order-form">
             <div class="email-row">
-              <input type="email" placeholder="Write your email" required />
+              <input class="input" type="email" placeholder="Write your email" required />
             </div>
 
-            <input type="text" placeholder="Your Country" required />
-            <input type="text" placeholder="Your City" required />
-            <input type="text" placeholder="Your Address" required />
+            <input class="input" type="text" placeholder="Your Country" required />
+            <input class="input" type="text" placeholder="Your City" required />
+            <input class="input" type="text" placeholder="Your Address" required />
 
             <button class="order-btn">Order my Nike</button>
           </form>
+        </div>
         </div>
       </section>
     </main>
@@ -158,9 +162,9 @@
         </div>
       </section>
       <section class="cpright">
-        <p class="small">
+        <span class="small-text">
           2022 ColoRawe @All rights reserved<br />United States
-        </p>
+        </span>
         <div class="footer-logo">
           <img class="logo-img" src="./img/logo.png" alt="logo" />
           <p class="logo-text">С&R</p>
