@@ -123,6 +123,7 @@ h1 {
   width: 240px;
   height: 346px;
   margin: 0px 30px;
+  position: relative;
 }
 
 .card p {
@@ -142,14 +143,20 @@ h1 {
 }
 
 .card::after {
-  content: "";
+      content: "";
   width: 1px;
   height: 346px;
   background: var(--text-color);
   position: absolute;
+  top: 0;
+  right: -50px;
 }
 
-.card:last-child::after {
+.card:nth-child(3):after {
+  left: -50px;
+}
+
+.card:nth-child(2)::after {
   display: none;
 }
 
@@ -323,9 +330,13 @@ footer ul {
 
 .ans {
   position: absolute;
+  top: 0;
   right: 80px;
-  top: 2500px;
   text-decoration: underline;
+}
+
+.footer-info {
+    position: relative;
 }
 
 .footer-info::after {
@@ -333,6 +344,8 @@ footer ul {
   height: 2px;
   width: 100%;
   background: var(--text-color);
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-logo {
