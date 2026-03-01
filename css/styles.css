@@ -329,14 +329,14 @@ footer ul {
 }
 
 .ans {
-  position: absolute;
-  top: 0;
-  right: 80px;
   text-decoration: underline;
+  text-align: right;
 }
 
 .footer-info {
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-info::after {
@@ -349,9 +349,6 @@ footer ul {
 }
 
 .footer-logo {
-  position: absolute;
-  right: 100px;
-  top: 2680px;
   text-align: center;
 }
 
@@ -370,8 +367,10 @@ footer ul {
 
 .cpright {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .small-text {
-  font-size: 18px;
+  font-size: 14px;
 }
